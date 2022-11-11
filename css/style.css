@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+    padding: .2em;
+    border: 1px solid rgba(50, 50, 50, .2);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 3em;
+    background-color: rgb(5, 33, 94);
+}
+
+
+h1 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin: 0 0 1em 0;
+}
+
+h4 {
+    background-color: antiquewhite;
+    /* azure */
+    ;
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+    font-weight: 400;
+    letter-spacing: .2em;
+}
+
+.listItem {
+    cursor: pointer;
+}
+
+.inputField,
+.list li,
+.finishedTasksList li {
+    padding: .7em 1em;
+}
+
+.list li {
+    background-color: rgb(253, 104, 104);
+}
+
+.tasksToDo,
+.tasksDone {
+    text-align: center;
+}
+
+.addTaskButton {
+    padding: .7em 1em;
+    border-style: none;
+    background-color: lightseagreen;
+    cursor: pointer;
+}
+
+.emptyListBtn {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: .2em;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.emptyListBtn:hover,
+.emptyListBtn:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.emptyListBtn:hover {
+    transform: translateY(-1px);
+}
+
+.emptyListBtn:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+.taskFinished {
+    text-decoration: line-through;
+    background-color: rgb(86, 197, 134);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width:768px) {
+    .wrapper {
+        width: 60%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}

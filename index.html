@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My ToDo App</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row">
+        <div class="wrapper">
+            <!-- The wrapper, also refered to as 'the container', is commonly used to center the layout on the page and keeps a layout from looking too wide or too narrow depending on device or viewport width. -->
+            <header>
+                <h1>A Simple To Do App</h1>
+                <input type="text" placeholder="Enter the new task here!" class="inputField">
+                <input type="button" value="Add Task" class="addTaskButton">
+            </header>
+            <main>
+                <div class="tasksToDo">
+                    <h4>Tasks To Do</h4>
+                    <ul class="list"></ul>
+                    <input type="button" class="emptyListBtn emptyListBtn1" value="Empty List">
+
+                </div>
+                <div class="tasksDone">
+                    <h4>Tasks Done</h4>
+                    <ul class="finishedTasksList"></ul>
+                    <input type="button" class="emptyListBtn emptyListBtn2" value="Empty List">
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
