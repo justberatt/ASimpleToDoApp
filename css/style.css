@@ -49,8 +49,24 @@ h4 {
     letter-spacing: .2em;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 .listItem {
     cursor: pointer;
+}
+
+.listItem:hover {
+    transform: translateY(-2);
+}
+
+.listItem:hover,
+.listItem:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.3) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
 }
 
 .inputField,
@@ -59,9 +75,40 @@ h4 {
     padding: .7em 1em;
 }
 
-.list li {
-    background-color: rgb(253, 104, 104);
+.taskToFinish {
+    display: flex;
+    align-items: center;
+    background-color: rgba(253, 104, 104, .8);
 }
+
+.taskFinished {
+    display: flex;
+    align-items: center;
+    background-color: rgb(86, 197, 123);
+}
+
+
+.remove {
+    margin-left: auto;
+    padding: .5em;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    cursor: pointer;
+}
+
+.remove:hover {
+    transform: translateY(-4);
+}
+
+.remove:hover,
+.remove:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.3) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
 
 .tasksToDo,
 .tasksDone {
@@ -122,15 +169,6 @@ h4 {
     transform: translateY(0);
 }
 
-.taskFinished {
-    text-decoration: line-through;
-    background-color: rgb(86, 197, 134);
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
 
 @media screen and (min-width:768px) {
     .wrapper {
